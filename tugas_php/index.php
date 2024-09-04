@@ -12,7 +12,7 @@
 <body class="flex justify-center min-h-screen bg-gray-100">
     <div class="text-center">
         <h1 class="text-2xl font-bold mb-6">Menentukan bilangan Ganjil dan Genap</h1>
-        <form action="" method="post" class="space-y-4 border border-black">
+        <form action="" method="post" class="space-y-4">
             <div>
                 <label for="awal" class="block">Batas awal</label>
                 <input type="number" name="awal" required class="border border-black p-2 w-full">

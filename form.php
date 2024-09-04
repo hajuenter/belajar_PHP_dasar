@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran</title>
 </head>
+
 <body>
     <form action="hasil_form.php" method="post">
         <h2>Masukkan data diri anda !!!</h2>
@@ -24,4 +26,5 @@
 
     </form>
 </body>
+
 </html>
