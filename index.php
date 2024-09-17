@@ -7,20 +7,20 @@ $angka1 = 100;
 $angka2 = 60;
 $perbandingan = true;
 $kumpulanhobi = array('Sepak bola', 'Badminton', 'Renang', 'Basket', 'Volly');
-echo '<br>Nama saya adalah'. ' '. $nama;
-echo '<br>Umur saya adalah'. ' '. $lahir;
-echo '<br>Hobi saya adalah'.' '. $kumpulanhobi[0].', '. $kumpulanhobi[1];
-echo '<br>Jumlah angka dari'. ' '.$angka1 .' '.'dan'.' '. $angka2. ' '.'adalah'. ' '. $angka1 + $angka2;
+echo '<br>Nama saya adalah' . ' ' . $nama;
+echo '<br>Umur saya adalah' . ' ' . $lahir;
+echo '<br>Hobi saya adalah' . ' ' . $kumpulanhobi[0] . ', ' . $kumpulanhobi[1];
+echo '<br>Jumlah angka dari' . ' ' . $angka1 . ' ' . 'dan' . ' ' . $angka2 . ' ' . 'adalah' . ' ' . $angka1 + $angka2;
 
 echo "<hr>";
 echo "<hr>";
 //belajar operator
 //perbedaan echo '' dan "" adalah kalau "" yang di ambil dari varibel langsung nilainya
-echo "<br>hasil dari $angka1 + $angka2 adalah". " ". $angka1+$angka2;
-echo "<br>hasil dari $angka1 - $angka2 adalah". " ". $angka1-$angka2;
-echo "<br>hasil dari $angka1 x $angka2 adalah". " ". $angka1*$angka2;
-echo "<br>hasil dari $angka1 : $angka2 adalah". " ". $angka1/$angka2;
-echo "<br>hasil dari $angka1 % $angka2 adalah". " ". $angka1%$angka2;
+echo "<br>hasil dari $angka1 + $angka2 adalah" . " " . $angka1 + $angka2;
+echo "<br>hasil dari $angka1 - $angka2 adalah" . " " . $angka1 - $angka2;
+echo "<br>hasil dari $angka1 x $angka2 adalah" . " " . $angka1 * $angka2;
+echo "<br>hasil dari $angka1 : $angka2 adalah" . " " . $angka1 / $angka2;
+echo "<br>hasil dari $angka1 % $angka2 adalah" . " " . $angka1 % $angka2;
 
 echo "<hr>";
 echo "<hr>";
@@ -28,42 +28,42 @@ echo "<hr>";
 //belajar percabangan if else dan switch case
 $cabang1 = "100";
 $cabang2 = "350";
-if($cabang1 > $cabang2) {
+if ($cabang1 > $cabang2) {
     echo "Cabang satu lebih besar";
-}else {
+} else {
     echo "Cabang satu kurang besar";
 } // hasil cabang satu kurang besar karena cabang1 adalah 100 dan cabang2 adalah 300
 
 echo "<hr>";
-if($cabang2 > 400) {
+if ($cabang2 > 400) {
     echo "Benar";
-}else if($cabang2 == 350) {
+} else if ($cabang2 == 350) {
     echo "Kurang benar";
-}else {
+} else {
     echo "Cukup";
-}// hasil kurang benar karena nilai dari cabang2 adalah 350
+} // hasil kurang benar karena nilai dari cabang2 adalah 350
 
 echo "<hr>";
 echo "<hr>";
 $hewan = "singa";
-switch($hewan) {
-    case 'singa' :
+switch ($hewan) {
+    case 'singa':
         echo "nilai benar";
         break;
-    case 'harimau' :
+    case 'harimau':
         echo "nilai salah";
         break;
-    default :
+    default:
         echo "hahaha";
         break;
-}// hasil nilai benar karena nilai dari cabang1 adalah 100
+} // hasil nilai benar karena nilai dari cabang1 adalah 100
 
 echo "<hr>";
 echo "<hr>";
 //belajar looping
 //for
-for ($i=3; $i < 10 ; $i++) { 
-   echo "for $i<br>";
+for ($i = 3; $i < 10; $i++) {
+    echo "for $i<br>";
 }
 // while
 $perulangan_while = "1";
@@ -85,8 +85,5 @@ foreach ($forarray as $key => $value) {
 }
 echo "<hr>";
 foreach ($forarray as $key => $value) {
-    echo "nomor index array dari". " ". ( $key + 3). " isinya adalah $value<br>";
+    echo "nomor index array dari" . " " . ($key + 3) . " isinya adalah $value<br>";
 }
-//method $_GET dan $_POST  
-
-?>
