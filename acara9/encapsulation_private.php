@@ -18,7 +18,7 @@ class Mobil
 ?>
 
 <?php
-// objek gak ngaruh gedi cilik abjad e 
+// objek gak ngaruh to cilik abjad e 
 $mobil = new mobil();
 
 // method set untuk menetapkan nilai properti

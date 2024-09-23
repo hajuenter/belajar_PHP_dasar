@@ -51,10 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="operation">Pilih operasi:</label>
         <select name="operation" id="operation">
-            <option value="tambah">Add</option>
-            <option value="kurang">Subtract</option>
-            <option value="kali">Multiply</option>
-            <option value="bagi">Divide</option>
+            <option value="tambah">Tambah</option>
+            <option value="kurang">Kurang</option>
+            <option value="kali">Kali</option>
+            <option value="bagi">Bagi</option>
         </select><br><br>
 
         <button type="submit">Hasil</button>
