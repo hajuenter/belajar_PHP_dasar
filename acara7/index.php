@@ -3,8 +3,8 @@ include("class_lib.php");
 ?>
 
 <?php
-$stefan = new Person(); 
-$jimy = new Person();   
+$stefan = new Person();
+$jimy = new Person();
 
 $stefan->set_name("Stevannnn");
 $jimy->set_name("Jimyyy");

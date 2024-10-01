@@ -1,4 +1,6 @@
 <?php
+
+// Protected: Properti bisa diakses di dalam kelas dan di kelas turunan.
 class Mobil
 {
     protected $merek;
@@ -15,15 +17,17 @@ class Mobil
         return $this->merek;
     }
 }
-?>
 
-<?php
-// Membuat objek dari kelas 'Mobil'
-$mobil = new Mobil();
+// Kelas Turunan
+class Sedan extends Mobil
+{
+    public function tampilkanMerek()
+    {
+        // Bisa mengakses properti 'merek' karena 'protected'
+        return "Merek Sedan: " . $this->merek;
+    }
+}
 
-// Method set untuk menetapkan nilai properti 'merek'
-$mobil->set_merek('Suzuki');
-
-// Mengambil nilai properti 'merek' melalui method get
-echo "Merek Mobil: " . $mobil->get_merek();
-?>
+$mobil = new Sedan();
+$mobil->set_merek('Toyota');
+echo $mobil->tampilkanMerek(); // Output: Merek Sedan: Toyota

@@ -1,37 +1,20 @@
 <?php
-// Definisi kelas 'person'
-class person
+// Definisi kelas 'Person'
+class Person
 {
-    // Properti untuk menyimpan nama orang, dengan akses publik
+    // Properti 'name' bersifat public, dapat diakses langsung
     public $name;
-
-    // Fungsi untuk menetapkan nilai properti 'name'
-    function set_name($new_name)
-    {
-        // Mengubah nilai properti 'name' menjadi nilai yang diberikan pada $new_name
-        $this->name = $new_name;
-    }
-
-    // Fungsi untuk mengambil nilai properti 'name'
-    function get_name()
-    {
-        // Mengembalikan nilai dari properti 'name'
-        return $this->name;
-    }
 }
+
 ?>
 
 <?php
-// Membuat objek baru dari kelas 'person'
-$person1 = new person();
+// Membuat objek baru dari kelas 'Person'
+$person1 = new Person();
 
-//menetapkan nilai properti 'name' menjadi 'HAHAHA'
-// Di sini, properti 'name' bisa diakses langsung karena properti ini bersifat 'public'
-echo "Hai" . $person1->name = 'HAHAHA';
+// Menetapkan nilai properti 'name' secara langsung
+$person1->name = 'Luffy';
 
-// Membuat garis pemisah di tampilan HTML
-echo "<hr>";
-
-// Memanggil fungsi 'get_name' untuk mengambil dan menampilkan nilai dari properti 'name'
-echo $person1->get_name();
+// Mengambil dan menampilkan nilai properti 'name' secara langsung
+echo "Raja bajak laut: " . $person1->name;
 ?>
